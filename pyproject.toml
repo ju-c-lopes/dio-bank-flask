@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "dio-bank"
+version = "0.1.0"
+description = ""
+authors = ["Juliano <juliano.co.lopes@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+flask = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+flask-jwt-extended = "*"
+gunicorn = "*"
+psycopg2-binary = "*"
+pytest = "*"
+pytest-mock = "*"
+
+[tool.pytest.ini_options]
+addopts = "-ra -vv"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
