@@ -11,10 +11,10 @@ flask = "*"
 flask-sqlalchemy = "*"
 flask-migrate = "*"
 flask-jwt-extended = "*"
-gunicorn = "*"
-psycopg2-binary = "*"
 pytest = "*"
 pytest-mock = "*"
+psycopg2-binary = "^2.9.9"
+gunicorn = "^22.0.0"
 
 [tool.pytest.ini_options]
 addopts = "-ra -vv"
