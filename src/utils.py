@@ -1,5 +1,5 @@
 from flask_jwt_extended import get_jwt_identity
-from src.app import User, db
+from src.models import User, db
 from http import HTTPStatus
 from functools import wraps
 
